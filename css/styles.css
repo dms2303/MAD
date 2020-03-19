@@ -1,0 +1,95 @@
+/*global
+  -----------------------------------*/
+  html{
+  box-sizing:border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+
+  body{
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #2e294e;
+  }
+  img{
+    width:300px;
+  }
+  a{
+    color: #51a3a3;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  h1{
+    font-size: 80px;
+    line-height: 1;
+    color: #51a3a3;
+  }
+  h2{
+    color: #ffba49;
+  }
+  h3{
+    color: #d7263d;
+  }
+  h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    line-height: 1;
+    margin:0;
+    text-align: left;
+  }
+  h2, h3{
+    display: inline-block;
+    letter-spacing: 3px;
+  }
+  h4{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+
+  .content-wrap{
+    max-width: 800px;
+    width: 80%;
+    margin:0 auto;
+    padding: 60px 0;
+    bottom: 10px;
+  }
+
+  @media screen and (max-width:749px){
+    h1, h2, h3{
+      font-size: 100px;
+    }
+    h4{
+      font-size: 20px;
+    }
+
+
+  }
+
+
+      /*color palate #1
+      -----------------------------------
+      #2e294e- space cadet purple
+      #51a3a3 - cadet blue
+      #d7263d - dusty red
+      #f46036 - portland orange
+      #ffba49 - pastel orange
+
+      *color palate #2
+      -----------------------------------
+      #01161E- rich black
+      #124559 - midnight green
+      #4F6D7a - payne's gray
+      #fcfcfc - baby powder
+      #d7cdcc - light gray
+
+      /*google fonts
+      -----------------------------------
+      font-family: 'Bebas Neue', cursive;
+      font-family: 'Montserrat', sans-serif;
+    */
