@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montclair Design Lab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container content-wrap" id="information">
+
+        <form>
+
+          <fieldset class="form-group">
+            <legend>Professional Information</legend>
+
+            <div class="form-group">
+              <label class="form-control-label" for="fullname">Full name:</label>
+              <input class="form-control" type="text" id="fullname" name="fullname">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="email">Email:</label>
+              <input class="form-control" type="email" id="email" name="email">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="selfie">Image</label>
+              <input class="form-control" type="file" id="selfie" name="selfie" accept="image/*">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="name">Brief headline that catches one's attention:</label>
+              <input class="form-control" type="text" id="headline" name="headline" placeholder="Eg. 'Single-toed yogi'">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="position">Professional title::</label>
+              <input class="form-control" type="text" id="title" name="title">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="reasonforvisit">Brief Professional Description:</label>
+              <textarea class="form-control" id="summary" rows="2"></textarea>
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label class="form-control-label" for="website">Portfolio Link:</label>
+              <input type="url" class="form-control" id="website" name="website" placeholder="Link to personal website">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <label>Please select your top three skills:</label>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> UX Design
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Photography
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Instructional Design
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Programming
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Project Management
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Graphic Design
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Gamification
+                </label>
+              </div><!-- form-check -->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Front End Web Development
+                </label>
+              </div><!-- form-check -->
+            </div><!-- form-group -->
+
+            <hr>
+
+            <button class="btn btn-warning" type="reset">Reset</button>
+            <button class="btn btn-info" type="submit">Submit</button>
+
+          </fieldset><!-- end of professional fieldset -->
+
+        </form>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
