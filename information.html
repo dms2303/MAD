@@ -19,89 +19,86 @@
 
             <div class="form-group">
               <label class="form-control-label" for="fullname">Full name:</label>
-              <input class="form-control" type="text" id="fullname" name="fullname">
+              <input class="form-control" type="text" id="fullname" name="fullname" v-model="fullname">
             </div><!-- form-group -->
 
             <div class="form-group">
               <label class="form-control-label" for="email">Email:</label>
-              <input class="form-control" type="email" id="email" name="email">
+              <input class="form-control" type="email" id="email" name="email" vmodel="email">
             </div><!-- form-group -->
 
             <div class="form-group">
               <label class="form-control-label" for="selfie">Image</label>
-              <input class="form-control" type="file" id="selfie" name="selfie" accept="image/*">
+              <input class="form-control" type="file" id="selfie" name="selfie" accept="image/*" v-model="selfie">
             </div><!-- form-group -->
 
             <div class="form-group">
-              <label class="form-control-label" for="name">Brief headline that catches one's attention:</label>
-              <input class="form-control" type="text" id="headline" name="headline" placeholder="Eg. 'Single-toed yogi'">
+              <label class="form-control-label" for="headline">Brief headline that catches one's attention:</label>
+              <input class="form-control" type="text" id="headline" name="headline" placeholder="Eg. 'Single-toed yogi'" v-model="headline">
             </div><!-- form-group -->
 
             <div class="form-group">
               <label class="form-control-label" for="position">Professional title:</label>
-              <input class="form-control" type="text" id="title" name="title">
+              <input class="form-control" type="text" id="title" name="title" v-model="title">
             </div><!-- form-group -->
 
             <div class="form-group">
-              <label class="form-control-label" for="reasonforvisit">Brief Professional Description:</label>
-              <textarea class="form-control" id="summary" rows="2"></textarea>
+              <label class="form-control-label" for="summary">Brief Professional Description:</label>
+              <textarea class="form-control" id="summary" name="summary" v-model="summary" rows="2"></textarea>
             </div><!-- form-group -->
 
             <div class="form-group">
               <label class="form-control-label" for="website">Portfolio Link:</label>
-              <input type="url" class="form-control" id="website" name="website" placeholder="Link to personal website">
+              <input type="url" class="form-control" id="website" name="website" placeholder="Link to personal website" v-model="website">
             </div><!-- form-group -->
 
-            <div class="form-group" min="3" max="3">
+            <div class="form-group" min="3" max="3" v-model="checkedskills">
               <label>Select your top skills (please choose only 3):</label>
+                <div class="form-check">
 
-              <div class="form-check">
-                <label class="form-check-label" for="uxd">
-                  <input class="form-check-input" type="checkbox" d="uxd" name="uxd" value="UX Design"> UX Design
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="uxd" name="uxd" value="UX Design" v-model="checkedskills">
+                    <label class="form-check-label" for="uxd"> UX Design</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="photography">
-                  <input class="form-check-input" type="checkbox" d="photography" name="photography" value="Photography"> Photography
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="photography" name="photography" value="Photography" v-model="checkedNames">
+                    <label class="form-check-label" for="photography"> Photography</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="instructional">
-                  <input class="form-check-input" type="checkbox" id="instructional" name="instructional" value="Instructional Design"> Instructional Design
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="instructionaldesign" name="instructionaldesign" value="Instructional Design" v-model="checkedNames">
+                    <label class="form-check-label" for="instructionaldesign"> Instructional Design</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="programming">
-                  <input class="form-check-input" type="checkbox" d="programming" name="programming" value="Programming"> Programming
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="jscript" name="jscript" value="JavaScript" v-model="checkedNames">
+                    <label class="form-check-label" for="jscript"> JavaScript</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="projmanagement">
-                  <input class="form-check-input" type="checkbox" d="projmanagement" name="projmanagement" value="Project Management"> Project Management
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="projmanagement" name="projmanagement" value="Project Management" v-model="checkedskills">
+                    <label class="form-check-label" for="projmanagement"> Project Management</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="graphic">
-                  <input class="form-check-input" type="checkbox" d="graphic" name="graphic" value="Graphic Design"> Graphic Design
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="photography" name="photography" value="Photography" v-model="checkedNames">
+                    <label class="form-check-label" for="photography"> Photography</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="game">
-                  <input class="form-check-input" type="checkbox" d="game" name="game" value="Gamification"> Gamification
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="graphicdes" name="graphicdes" value="Graphic Design" v-model="checkedNames">
+                    <label class="form-check-label" for="graphicdes"> Graphic Design</label>
+                  </div>
 
-              <div class="form-check">
-                <label class="form-check-label" for="frontend">
-                  <input class="form-check-input" type="checkbox" d="frontend" name="frontend" value="Front End Development"> Front End Web Development
-                </label>
-              </div><!-- form-check -->
+                  <div class="form-check">
+                    <input type="checkbox" id="frontend" name="frontend" value="Front End Web Development" v-model="checkedNames">
+                    <label class="form-check-label" for="frontend"> Front End Web Development</label>
+                  </div>
+
+                </div>
+              <br>
+
             </div><!-- form-group -->
             <hr>
             <button class="btn btn-warning" type="reset">Reset</button>
@@ -112,4 +109,6 @@
       </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="script.js"></script>
 </html>
